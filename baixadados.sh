@@ -1,6 +1,6 @@
 pip install biopython pandas gffutils schedule matplotlib 
 pip install requests-cache
-
+pip install cobra
 
 
 
