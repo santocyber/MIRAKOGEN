@@ -1,0 +1,49 @@
+2025-05-14 13:40:45 - VALIDATION - Início do script de validação de dados genômicos.
+2025-05-14 13:40:45 - VALIDATION - Iniciando validação dos dados do Morango (Fragaria x ananassa).
+2025-05-14 13:40:45 - VALIDATION - Validando arquivo: /home/ubuntu/genomic_data/fragaria_x_ananassa/F_ana_Camarosa_6-28-17_hardmasked.fasta.gz
+2025-05-14 13:40:45 - VALIDATION - EXISTE: F_ana_Camarosa_6-28-17_hardmasked.fasta.gz
+2025-05-14 13:40:45 - VALIDATION - NÃO VAZIO: F_ana_Camarosa_6-28-17_hardmasked.fasta.gz
+2025-05-14 13:40:51 - VALIDATION - INTEGRIDADE GZIP OK: F_ana_Camarosa_6-28-17_hardmasked.fasta.gz
+2025-05-14 13:40:51 - VALIDATION - Validando arquivo: /home/ubuntu/genomic_data/fragaria_x_ananassa/F_ana_Camarosa_6-28-17.fasta.gz
+2025-05-14 13:40:51 - VALIDATION - EXISTE: F_ana_Camarosa_6-28-17.fasta.gz
+2025-05-14 13:40:51 - VALIDATION - NÃO VAZIO: F_ana_Camarosa_6-28-17.fasta.gz
+2025-05-14 13:40:58 - VALIDATION - INTEGRIDADE GZIP OK: F_ana_Camarosa_6-28-17.fasta.gz
+2025-05-14 13:40:58 - VALIDATION - Validando arquivo: /home/ubuntu/genomic_data/fragaria_x_ananassa/Fxa_v1.2_makerStandard_MakerGenes_woTposases.gff.gz
+2025-05-14 13:40:58 - VALIDATION - EXISTE: Fxa_v1.2_makerStandard_MakerGenes_woTposases.gff.gz
+2025-05-14 13:40:58 - VALIDATION - NÃO VAZIO: Fxa_v1.2_makerStandard_MakerGenes_woTposases.gff.gz
+2025-05-14 13:40:59 - VALIDATION - INTEGRIDADE GZIP OK: Fxa_v1.2_makerStandard_MakerGenes_woTposases.gff.gz
+2025-05-14 13:40:59 - VALIDATION - Validando arquivo: /home/ubuntu/genomic_data/fragaria_x_ananassa/Fxa_v1.2_makerStandard_transcripts_woTposases.fasta.gz
+2025-05-14 13:40:59 - VALIDATION - EXISTE: Fxa_v1.2_makerStandard_transcripts_woTposases.fasta.gz
+2025-05-14 13:40:59 - VALIDATION - NÃO VAZIO: Fxa_v1.2_makerStandard_transcripts_woTposases.fasta.gz
+2025-05-14 13:41:00 - VALIDATION - INTEGRIDADE GZIP OK: Fxa_v1.2_makerStandard_transcripts_woTposases.fasta.gz
+2025-05-14 13:41:00 - VALIDATION - Validando arquivo: /home/ubuntu/genomic_data/fragaria_x_ananassa/Fxa_v1.2_makerStandard_proteins_woTposases.fasta.gz
+2025-05-14 13:41:00 - VALIDATION - EXISTE: Fxa_v1.2_makerStandard_proteins_woTposases.fasta.gz
+2025-05-14 13:41:00 - VALIDATION - NÃO VAZIO: Fxa_v1.2_makerStandard_proteins_woTposases.fasta.gz
+2025-05-14 13:41:01 - VALIDATION - INTEGRIDADE GZIP OK: Fxa_v1.2_makerStandard_proteins_woTposases.fasta.gz
+2025-05-14 13:41:01 - VALIDATION - Validando arquivo: /home/ubuntu/genomic_data/fragaria_x_ananassa/F_ana_lincRNAs_masked_transcripts_removed.gtf.gz
+2025-05-14 13:41:01 - VALIDATION - EXISTE: F_ana_lincRNAs_masked_transcripts_removed.gtf.gz
+2025-05-14 13:41:01 - VALIDATION - NÃO VAZIO: F_ana_lincRNAs_masked_transcripts_removed.gtf.gz
+2025-05-14 13:41:02 - VALIDATION - INTEGRIDADE GZIP OK: F_ana_lincRNAs_masked_transcripts_removed.gtf.gz
+2025-05-14 13:41:02 - VALIDATION - Validação dos dados do Morango concluída.
+2025-05-14 13:41:02 - VALIDATION - Iniciando validação dos dados do Tomateiro (Solanum lycopersicum).
+2025-05-14 13:41:02 - VALIDATION - Arquivo ZIP do NCBI Datasets (/home/ubuntu/genomic_data/solanum_lycopersicum/GCF_036512215.1.zip) não encontrado. Validando arquivos individuais baixados via FTP (se houver).
+2025-05-14 13:41:02 - VALIDATION - Validando arquivo: /home/ubuntu/genomic_data/solanum_lycopersicum/GCF_036512215.1_SLM_r2.1_genomic.fna.gz
+2025-05-14 13:41:02 - VALIDATION - EXISTE: GCF_036512215.1_SLM_r2.1_genomic.fna.gz
+2025-05-14 13:41:02 - VALIDATION - NÃO VAZIO: GCF_036512215.1_SLM_r2.1_genomic.fna.gz
+2025-05-14 13:41:09 - VALIDATION - INTEGRIDADE GZIP OK: GCF_036512215.1_SLM_r2.1_genomic.fna.gz
+2025-05-14 13:41:09 - VALIDATION - Validando arquivo: /home/ubuntu/genomic_data/solanum_lycopersicum/GCF_036512215.1_SLM_r2.1_genomic.gff.gz
+2025-05-14 13:41:09 - VALIDATION - EXISTE: GCF_036512215.1_SLM_r2.1_genomic.gff.gz
+2025-05-14 13:41:09 - VALIDATION - NÃO VAZIO: GCF_036512215.1_SLM_r2.1_genomic.gff.gz
+2025-05-14 13:41:10 - VALIDATION - INTEGRIDADE GZIP OK: GCF_036512215.1_SLM_r2.1_genomic.gff.gz
+2025-05-14 13:41:10 - VALIDATION - Validando arquivo: /home/ubuntu/genomic_data/solanum_lycopersicum/GCF_036512215.1_SLM_r2.1_rna.fna.gz
+2025-05-14 13:41:10 - VALIDATION - EXISTE: GCF_036512215.1_SLM_r2.1_rna.fna.gz
+2025-05-14 13:41:10 - VALIDATION - NÃO VAZIO: GCF_036512215.1_SLM_r2.1_rna.fna.gz
+2025-05-14 13:41:10 - VALIDATION - INTEGRIDADE GZIP OK: GCF_036512215.1_SLM_r2.1_rna.fna.gz
+2025-05-14 13:41:10 - VALIDATION - Validando arquivo: /home/ubuntu/genomic_data/solanum_lycopersicum/GCF_036512215.1_SLM_r2.1_protein.faa.gz
+2025-05-14 13:41:10 - VALIDATION - EXISTE: GCF_036512215.1_SLM_r2.1_protein.faa.gz
+2025-05-14 13:41:10 - VALIDATION - NÃO VAZIO: GCF_036512215.1_SLM_r2.1_protein.faa.gz
+2025-05-14 13:41:11 - VALIDATION - INTEGRIDADE GZIP OK: GCF_036512215.1_SLM_r2.1_protein.faa.gz
+2025-05-14 13:41:11 - VALIDATION - Validação dos dados do Tomateiro concluída.
+2025-05-14 13:41:11 - VALIDATION - Gerando sumário da validação em: /home/ubuntu/genomic_data/data_validation_summary.md
+2025-05-14 13:41:35 - VALIDATION - Sumário da validação gerado em /home/ubuntu/genomic_data/data_validation_summary.md.
+2025-05-14 13:41:35 - VALIDATION - Fim do script de validação de dados genômicos.

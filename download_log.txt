@@ -1,0 +1,33 @@
+2025-05-14 13:38:28 - Início do script de download de dados genômicos.
+2025-05-14 13:38:28 - Iniciando download dos dados do Morango (Fragaria x ananassa) do GDR.
+2025-05-14 13:38:28 - Baixando F_ana_Camarosa_6-28-17_hardmasked.fasta.gz de https://www.rosaceae.org/rosaceae_downloads/Fragaria_x_ananassa/Fragaria_x_ananassa_Camarosa_Genome_v1.0.a1/assembly/F_ana_Camarosa_6-28-17_hardmasked.fasta.gz para /home/ubuntu/genomic_data/fragaria_x_ananassa/F_ana_Camarosa_6-28-17_hardmasked.fasta.gz
+2025-05-14 13:38:35 - Download de F_ana_Camarosa_6-28-17_hardmasked.fasta.gz concluído com sucesso.
+2025-05-14 13:38:35 - Baixando F_ana_Camarosa_6-28-17.fasta.gz de https://www.rosaceae.org/rosaceae_downloads/Fragaria_x_ananassa/Fragaria_x_ananassa_Camarosa_Genome_v1.0.a1/assembly/F_ana_Camarosa_6-28-17.fasta.gz para /home/ubuntu/genomic_data/fragaria_x_ananassa/F_ana_Camarosa_6-28-17.fasta.gz
+2025-05-14 13:38:42 - Download de F_ana_Camarosa_6-28-17.fasta.gz concluído com sucesso.
+2025-05-14 13:38:42 - Baixando Fxa_v1.2_makerStandard_MakerGenes_woTposases.gff.gz de https://www.rosaceae.org/rosaceae_downloads/Fragaria_x_ananassa/Fragaria_x_ananassa_Camarosa_Genome_v1.0.a1/genes/Fxa_v1.2_makerStandard_MakerGenes_woTposases.gff.gz para /home/ubuntu/genomic_data/fragaria_x_ananassa/Fxa_v1.2_makerStandard_MakerGenes_woTposases.gff.gz
+2025-05-14 13:38:43 - Download de Fxa_v1.2_makerStandard_MakerGenes_woTposases.gff.gz concluído com sucesso.
+2025-05-14 13:38:43 - Baixando Fxa_v1.2_makerStandard_transcripts_woTposases.fasta.gz de https://www.rosaceae.org/rosaceae_downloads/Fragaria_x_ananassa/Fragaria_x_ananassa_Camarosa_Genome_v1.0.a1/genes/Fxa_v1.2_makerStandard_transcripts_woTposases.fasta.gz para /home/ubuntu/genomic_data/fragaria_x_ananassa/Fxa_v1.2_makerStandard_transcripts_woTposases.fasta.gz
+2025-05-14 13:38:46 - Download de Fxa_v1.2_makerStandard_transcripts_woTposases.fasta.gz concluído com sucesso.
+2025-05-14 13:38:46 - Baixando Fxa_v1.2_makerStandard_proteins_woTposases.fasta.gz de https://www.rosaceae.org/rosaceae_downloads/Fragaria_x_ananassa/Fragaria_x_ananassa_Camarosa_Genome_v1.0.a1/genes/Fxa_v1.2_makerStandard_proteins_woTposases.fasta.gz para /home/ubuntu/genomic_data/fragaria_x_ananassa/Fxa_v1.2_makerStandard_proteins_woTposases.fasta.gz
+2025-05-14 13:38:47 - Download de Fxa_v1.2_makerStandard_proteins_woTposases.fasta.gz concluído com sucesso.
+2025-05-14 13:38:47 - Baixando F_ana_lincRNAs_masked_transcripts_removed.gtf.gz de https://www.rosaceae.org/rosaceae_downloads/Fragaria_x_ananassa/Fragaria_x_ananassa_Camarosa_Genome_v1.0.a1/genes/F_ana_lincRNAs_masked_transcripts_removed.gtf.gz para /home/ubuntu/genomic_data/fragaria_x_ananassa/F_ana_lincRNAs_masked_transcripts_removed.gtf.gz
+2025-05-14 13:38:49 - Download de F_ana_lincRNAs_masked_transcripts_removed.gtf.gz concluído com sucesso.
+2025-05-14 13:38:49 - Download dos dados do Morango concluído.
+2025-05-14 13:38:49 - Iniciando download dos dados do Tomateiro (Solanum lycopersicum) do NCBI.
+2025-05-14 13:38:49 - Para o tomateiro (e.g., GCF_036512215.1), o método recomendado é usar a ferramenta de linha de comando 'datasets' do NCBI.
+2025-05-14 13:38:49 - Exemplo de comando: datasets download genome accession GCF_036512215.1 --include gff3,rna,protein,genome --filename /home/ubuntu/genomic_data/solanum_lycopersicum/GCF_036512215.1.zip
+2025-05-14 13:38:49 - Tentando baixar arquivos individuais do FTP do NCBI para GCF_036512215.1. (Estes links podem não ser estáveis ou universais)
+2025-05-14 13:38:49 - Baixando GCF_036512215.1_SLM_r2.1_genomic.fna.gz de https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/036/512/215/GCF_036512215.1_SLM_r2.1/GCF_036512215.1_SLM_r2.1_genomic.fna.gz para /home/ubuntu/genomic_data/solanum_lycopersicum/GCF_036512215.1_SLM_r2.1_genomic.fna.gz
+2025-05-14 13:39:03 - Download de GCF_036512215.1_SLM_r2.1_genomic.fna.gz concluído com sucesso.
+2025-05-14 13:39:03 - Baixando GCF_036512215.1_SLM_r2.1_genomic.gff.gz de https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/036/512/215/GCF_036512215.1_SLM_r2.1/GCF_036512215.1_SLM_r2.1_genomic.gff.gz para /home/ubuntu/genomic_data/solanum_lycopersicum/GCF_036512215.1_SLM_r2.1_genomic.gff.gz
+2025-05-14 13:39:05 - Download de GCF_036512215.1_SLM_r2.1_genomic.gff.gz concluído com sucesso.
+2025-05-14 13:39:05 - Baixando GCF_036512215.1_SLM_r2.1_rna.fna.gz de https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/036/512/215/GCF_036512215.1_SLM_r2.1/GCF_036512215.1_SLM_r2.1_rna.fna.gz para /home/ubuntu/genomic_data/solanum_lycopersicum/GCF_036512215.1_SLM_r2.1_rna.fna.gz
+2025-05-14 13:39:08 - Download de GCF_036512215.1_SLM_r2.1_rna.fna.gz concluído com sucesso.
+2025-05-14 13:39:08 - Baixando GCF_036512215.1_SLM_r2.1_protein.faa.gz de https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/036/512/215/GCF_036512215.1_SLM_r2.1/GCF_036512215.1_SLM_r2.1_protein.faa.gz para /home/ubuntu/genomic_data/solanum_lycopersicum/GCF_036512215.1_SLM_r2.1_protein.faa.gz
+2025-05-14 13:39:10 - Download de GCF_036512215.1_SLM_r2.1_protein.faa.gz concluído com sucesso.
+2025-05-14 13:39:10 - Download dos dados do Tomateiro (tentativa via FTP) concluído.
+2025-05-14 13:39:10 - Verifique o diretório /home/ubuntu/genomic_data/solanum_lycopersicum e o log /home/ubuntu/genomic_data/download_log.txt para detalhes.
+2025-05-14 13:39:10 - Se os downloads do tomateiro via FTP falharem, use o comando 'datasets' do NCBI conforme instruído acima.
+2025-05-14 13:39:10 - Para dados brutos de RNA-Seq (SRA), use o SRA Toolkit do NCBI.
+2025-05-14 13:39:10 - Exemplo: prefetch SRR_ACCESSION && fasterq-dump SRR_ACCESSION -O /home/ubuntu/genomic_data/sra_data
+2025-05-14 13:39:10 - Fim do script de download de dados genômicos.

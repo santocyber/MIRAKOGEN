@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação de Expressão Gênica</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        form div {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="number"], select {
+            width: calc(100% - 22px);
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #5cb85c;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+        .results {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e9e9e9;
+            border-radius: 4px;
+        }
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            background-color: #333;
+            color: #f4f4f4;
+            padding: 10px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Simulador de Engenharia Metabólica (Tomateiro)</h1>
+
+        <h2>Configurar Simulação</h2>
+        <form id="simulationForm">
+            <div>
+                <label for="simulationType">Tipo de Simulação:</label>
+                <select id="simulationType" name="simulationType">
+                    <option value="fba_original">FBA no Modelo Original</option>
+                    <option value="coexpression">Co-expressão Gênica</option>
+                    <option value="crispr_knockout">CRISPR Knockout</option>
+                    <option value="crispr_upregulate">CRISPR Upregulation</option>
+                </select>
+            </div>
+            
+            <div id="coexpressionParams" style="display:none;">
+                <label for="genesToExpress">Genes para Superexpressão (separados por vírgula):</label>
+                <input type="text" id="genesToExpress" name="genesToExpress" value="TOMATO_GENE_FOR_FLAVOR,TOMATO_GENE_FOR_COLOR">
+                <label for="overexpressionFactor">Fator de Superexpressão:</label>
+                <input type="number" id="overexpressionFactor" name="overexpressionFactor" value="3.0" step="0.1">
+            </div>
+
+            <div id="crisprParams" style="display:none;">
+                <label for="geneToModify">Gene Alvo para CRISPR:</label>
+                <input type="text" id="geneToModify" name="geneToModify" value="TOMATO_UNDESIRABLE_ENZYME_GENE">
+            </div>
+
+            <button type="button" onclick="runSimulation()">Executar Simulação</button>
+        </form>
+
+        <h2>Resultados da Simulação</h2>
+        <div class="results" id="simulationResults">
+            <p>Os resultados da simulação aparecerão aqui.</p>
+            <pre id="resultsOutput"></pre>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("simulationType").addEventListener("change", function() {
+            var coexpressionParams = document.getElementById("coexpressionParams");
+            var crisprParams = document.getElementById("crisprParams");
+            if (this.value === "coexpression") {
+                coexpressionParams.style.display = "block";
+                crisprParams.style.display = "none";
+            } else if (this.value === "crispr_knockout" || this.value === "crispr_upregulate") {
+                coexpressionParams.style.display = "none";
+                crisprParams.style.display = "block";
+            } else {
+                coexpressionParams.style.display = "none";
+                crisprParams.style.display = "none";
+            }
+        });
+
+        async function runSimulation() {
+            const form = document.getElementById("simulationForm");
+            const simulationType = document.getElementById("simulationType").value;
+            const resultsOutput = document.getElementById("resultsOutput");
+            resultsOutput.textContent = "Executando simulação...";
+
+            let payload = { simulation_type: simulationType };
+
+            if (simulationType === "coexpression") {
+                payload.gene_ids_to_overexpress = document.getElementById("genesToExpress").value.split(",").map(s => s.trim()).filter(s => s);
+                payload.overexpression_factor = parseFloat(document.getElementById("overexpressionFactor").value);
+            } else if (simulationType === "crispr_knockout" || simulationType === "crispr_upregulate") {
+                payload.gene_id_to_modify = document.getElementById("geneToModify").value.trim();
+                if (simulationType === "crispr_knockout") {
+                    payload.modification_type = "knockout";
+                } else {
+                    payload.modification_type = "upregulate";
+                }
+            }
+            
+            try {
+                const response = await fetch("/run_simulation", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(payload),
+                });
+                const result = await response.json();
+                if (result.error) {
+                    resultsOutput.textContent = "Erro: " + result.error;
+                } else {
+                    resultsOutput.textContent = JSON.stringify(result.data, null, 2);
+                }
+            } catch (error) {
+                resultsOutput.textContent = "Falha ao executar a simulação: " + error;
+            }
+        }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,9 @@
+Tipo,Alvo,Descrição,Valor_Objetivo,Status
+Baseline,N/A,Modelo Base,0.0,optimal
+Deleção,G6P_bm_tx,Deleção G6P_bm_tx...,0.0,optimal
+Deleção,reac_897,Deleção reac_897...,0.0,optimal
+Deleção,reac_1875,Deleção reac_1875...,0.0,optimal
+Superexpressão,G6P_bm_tx,Superexp. G6P_bm_tx...,0.0,optimal
+Superexpressão,reac_897,Superexp. reac_897...,0.0,optimal
+Superexpressão,reac_1875,Superexp. reac_1875...,0.0,optimal
+Co-expressão,G6P_bm_tx+reac_897,Co-exp. G6P_bm_tx...+reac_897...,0.0,optimal

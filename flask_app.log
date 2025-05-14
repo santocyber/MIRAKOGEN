@@ -1,0 +1,7 @@
+nohup: ignoring input
+Traceback (most recent call last):
+  File "/home/ubuntu/gene_expression_webapp/src/main.py", line 8, in <module>
+    from integrated_genetic_manipulation_module import MetabolicEngineeringSimulator
+  File "/home/ubuntu/gene_expression_webapp/src/integrated_genetic_manipulation_module.py", line 64
+    if not self.current_model:
+IndentationError: unexpected indent

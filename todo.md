@@ -1,0 +1,18 @@
+- [x] Instalar e configurar ferramenta NCBI Datasets para download automatizado.
+- [x] Automatizar aquisição de dados genômicos (FASTA, GFF) de repositórios públicos (NCBI) para tomateiro (_Solanum lycopersicum_ GCF_000188115.5) e morango (_Fragaria x ananassa_ GCA_049309125.1).
+- [x] Buscar e validar modelos SBML existentes para tomateiro e morango (concluído que reconstrução/placeholder é necessário).
+- [x] Validar accession e arquivos genômicos para morango (GCA_049309125.1 FASTA baixado; GFF não encontrado no pacote NCBI, busca em fontes alternativas pendente).
+- [x] Corrigir scripts Python para modelagem metabólica (indentação, sintaxe).
+- [x] Construir modelo metabólico quantitativo placeholder para tomateiro (solanum_lycopersicum_model.xml gerado) usando Python e COBRApy.
+- [ ] Buscar GFF3 de _Fragaria x ananassa_ (GCA_049309125.1) em fontes alternativas (Phytozome, GDR, Ensembl Plants) ou adaptar pipeline de reconstrução de modelo (em espera).
+- [x] Desenvolver scripts de simulação de fluxo metabólico (FBA, pFBA) para o modelo de tomateiro.
+- [x] Corrigir scripts Python para simulação de engenharia genética (sintaxe, indentação).
+- [x] Implementar módulo virtual conceitual para simular co-expressão de múltiplos genes e edição CRISPR/Cas9 no modelo de tomateiro.
+- [x] Criar estrutura da aplicação web Flask (`gene_expression_webapp`).
+- [x] Desenvolver interface frontend básica (HTML, CSS, JavaScript) para interação do usuário e visualização de resultados.
+- [x] Implementar rotas Flask no backend para conectar o frontend aos módulos de simulação.
+- [x] Copiar módulo de simulação integrado para o diretório do projeto Flask.
+- [x] Atualizar `requirements.txt` da aplicação Flask com dependências (cobra, numpy).
+- [ ] Realizar testes completos de integração da aplicação web (frontend-backend, execução de simulações via UI).
+- [ ] Compilar documentação técnica detalhada do sistema, incluindo arquitetura, scripts, limitações (modelo placeholder, pendência do GFF de morango) e instruções para instalação, configuração e uso no servidor do usuário.
+- [ ] Reportar a conclusão, entregar a aplicação completa (código-fonte, scripts, modelos placeholder, documentação) ao usuário.
